@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     var buttonTile = new ListTile(
       title: new RaisedButton(
-          child: new Text("КАТЮША НАЖМИ ЗДЕСЬ"),
+          child: new Text("Mail+Tel+QR"),
           onPressed: () {
             setState(() {
               swap = !swap;
@@ -48,8 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
     Widget swapWidget;
     if (swap) {
       swapWidget = new CircleAvatar(
-        radius: 200,
-        backgroundImage: AssetImage('assets/images/fff.png'),
+        radius: 160,
+        backgroundImage: AssetImage('assets/images/QR1.png'),
       );
     } else {
       swapWidget = new CircleAvatar(
@@ -64,15 +64,19 @@ class _MyHomePageState extends State<MyHomePage> {
     return SafeArea(
       child: new Scaffold(
         appBar: new AppBar(
-          title: new Text("Alex"),
+          title: new Text("Aleksander_Vizitka_Alfa"),
         ),
         body: new ListView(
           children: <Widget>[
             buttonTile,
             swapTile,
             Text(
-              'Скучаю',
+              '+380687915451',
               style: TextStyle(fontSize: 30),
+            ),
+            Text(
+              'alexanderdir@gmail.com',
+              style: TextStyle(fontSize: 25),
             ),
           ],
         ),
